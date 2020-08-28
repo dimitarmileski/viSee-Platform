@@ -29,13 +29,20 @@ class Show extends Component {
 
   render() {
     return (
+        <div>
+          <header>
+            <h1>
+              🔭 viSee
+            </h1>
+            <h4>
+              ☁️ IOT web platform
+            </h4>
+            <h3>
+              Web app
+            </h3>
+          </header>
       <div class="container">
         <div class="panel panel-default">
-        <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-3">🔭viSee</h1>
-        </div>
-        </div>
           <div class="panel-heading">
             <h3 class="panel-title">
               Point Details
@@ -59,7 +66,11 @@ class Show extends Component {
             <button onClick={this.delete.bind(this, this.state.point.id)} class="btn btn-danger">Delete</button>
           </div>
         </div>
+        <footer>
+          <p>🔭viSee 2020 - Dimitar Mileski</p>
+        </footer>
       </div>
+        </div>
     );
   }
 }
